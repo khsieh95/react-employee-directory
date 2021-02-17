@@ -64,7 +64,7 @@ class table extends Component {
   render() {
     return (
       <div>
-        <form>
+        <form className="submit">
           <input
             type="text"
             onChange={this.handleInputChange}
@@ -88,14 +88,14 @@ class table extends Component {
                 onClick={this.handleFirstName}
                 className="firstName"
               >
-                First Name
+                Sort by First Name
               </th>
               <th
                 scope="col"
                 onClick={this.handleLastName}
                 className="lastName"
               >
-                Last Name
+                Sort by Last Name
               </th>
               <th
                 scope="col"

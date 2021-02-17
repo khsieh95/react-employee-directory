@@ -5,7 +5,10 @@ function Header() {
   return (
     <div className="header">
       <h1>Welcome to your Employee Directory!</h1>
-      <p>Where we can help you access information about your employees</p>
+      <p>
+        Where we can help you access information about your employees listed
+        below!
+      </p>
     </div>
   );
 }
