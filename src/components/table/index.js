@@ -27,9 +27,10 @@ class table extends Component {
     console.log(this.state.firstName);
   };
 
-  searchByName = () => {
+  searchByName = (event) => {
+    event.preventDefault();
     const filtered = this.state.employees.filter(
-      (obj) => obj.name.first === this.state.firstName
+      (obj) => obj.name.first === this.state.search
     );
     this.setState({ employees: filtered });
   };
@@ -64,8 +65,17 @@ class table extends Component {
     return (
       <div>
         <form>
-          <input type="text" placeholder="Name" name="search" />
-          <button className="btn-primary" type="submit">
+          <input
+            type="text"
+            onChange={this.handleInputChange}
+            placeholder="Name"
+            name="search"
+          />
+          <button
+            onClick={this.searchByName}
+            className="btn-primary"
+            type="submit"
+          >
             Search
           </button>
         </form>
