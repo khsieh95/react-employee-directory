@@ -33,7 +33,7 @@ class table extends Component {
     });
     this.setState({ sortEmployees: sort });
   };
-  handleFirstName = () => {
+  handleLastName = () => {
     const sort = this.state.sortEmployees.sort((k, h) => {
       if (k.name.last > h.name.last) {
         return 1;
@@ -47,7 +47,16 @@ class table extends Component {
   };
 
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <form>
+          <input type="text" placeholder="Name" name="search" />
+          <button className="btn-primary" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    );
   }
 }
 
