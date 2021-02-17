@@ -4,7 +4,7 @@ const BASEURL =
   "https://randomuser.me/api/?inc=name,email,location,cell,picture,login&results=200&nat=us";
 
 export default {
-  serch: function () {
+  search: function () {
     return axios.get(BASEURL);
   },
 };
