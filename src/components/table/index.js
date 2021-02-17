@@ -51,4 +51,4 @@ class table extends Component {
   }
 }
 
-export default Table;
+export default table;
