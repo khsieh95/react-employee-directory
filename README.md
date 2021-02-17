@@ -2,6 +2,10 @@
 
 <img width="720" alt="Screen Shot 2021-02-17 at 2 38 26 PM" src="https://user-images.githubusercontent.com/74025123/108277203-e2f36100-712d-11eb-918b-205b63e48b52.png">
 
+<br>
+
+[Deployment Link](https://kh-employee-directory.herokuapp.com/)
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## Description
